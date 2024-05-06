@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALSI"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:padding="35sp"
+        android:background="#55e292"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:hint="Enter your Name"
+        android:padding="20sp"
+        android:background="#55e292"/>
+
+    <EditText
+        android:id="@+id/pairname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="#55e292"
+        android:gravity="center"
+        android:hint="Enter your Pair Name"
+        android:padding="20sp" />
+
+    <Button
+        android:id="@+id/percentage"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pairname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:hint="Percentage"
+        android:padding="10sp"
+        android:textColorHint="#FFFFFF"
+        android:textSize="10dp" />
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/percentage"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="100dp"/>
+
+
+</RelativeLayout>
